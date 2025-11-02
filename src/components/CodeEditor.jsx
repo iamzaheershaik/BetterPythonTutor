@@ -32,20 +32,23 @@ const CodeEditor = ({ code, language, onChange, currentLine }) => {
 
   useEffect(() => {
     if (editorRef.current && currentLine) {
-      // Highlight current line
-      editorRef.current.deltaDecorations([], [
-        {
-          range: new editorRef.current.getModel().monaco.Range(currentLine, 1, currentLine, 1),
-          options: {
-            isWholeLine: true,
-            className: 'current-line-highlight',
-            glyphMarginClassName: 'current-line-glyph'
+      const model = editorRef.current.getModel();
+      if (model) {
+        // Highlight current line
+        editorRef.current.deltaDecorations([], [
+          {
+            range: new window.monaco.Range(currentLine, 1, currentLine, 1),
+            options: {
+              isWholeLine: true,
+              className: 'current-line-highlight',
+              glyphMarginClassName: 'current-line-glyph'
+            }
           }
-        }
-      ]);
-      
-      // Scroll to current line
-      editorRef.current.revealLineInCenter(currentLine);
+        ]);
+        
+        // Scroll to current line
+        editorRef.current.revealLineInCenter(currentLine);
+      }
     }
   }, [currentLine]);
 

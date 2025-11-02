@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<video-prompt>
+  <metadata>
+    <created>2025-11-02T12:00:00.000Z</created>
+    <version>1.0</version>
+  </metadata>
+  <content>
+    <scene>A serene mountain landscape at sunset with golden light reflecting off a crystal-clear lake. Snow-capped peaks tower in the background while pine trees frame the foreground. A small wooden dock extends into the calm water, creating perfect reflections.</scene>
+    <visual-style>Cinematic with dramatic color grading and film grain</visual-style>
+    <camera>
+      <movement>Slow drone shot ascending from ground level, revealing the full landscape panorama</movement>
+    </camera>
+    <lighting>Golden hour with warm, soft light and long shadows stretching across the landscape</lighting>
+    <mood>Peaceful and contemplative with a sense of tranquility and natural beauty</mood>
+  </content>
+  <technical-specs>
+    <duration>10 seconds</duration>
+    <aspect-ratio>16:9</aspect-ratio>
+    <fps>24</fps>
+    <resolution>3840x2160</resolution>
+  </technical-specs>
+  <additional-parameters>
+- Add subtle film grain for vintage cinematic feel
+- Include lens flare when sun is visible
+- Color palette: warm oranges and cool blues
+- Depth of field: keep entire landscape in focus
+  </additional-parameters>
+</video-prompt>
